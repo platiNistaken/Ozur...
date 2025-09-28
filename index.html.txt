@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sana Bir Mesajım Var 💌</title>
+<style>
+    body {
+        background: #ffe6eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        text-align: center;
+    }
+    h1 {
+        color: #d6336c;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #333;
+        font-size: 1.2rem;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    .heart {
+        width: 100px;
+        height: 100px;
+        background: #d6336c;
+        transform: rotate(-45deg);
+        animation: pulse 1s infinite;
+        position: relative;
+    }
+    .heart::before, .heart::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        background: #d6336c;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .heart::before { top: -50px; left: 0; }
+    .heart::after  { top: 0; left: 50px; }
+    @keyframes pulse {
+        0% { transform: rotate(-45deg) scale(1); }
+        50% { transform: rotate(-45deg) scale(1.1); }
+        100% { transform: rotate(-45deg) scale(1); }
+    }
+</style>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1>Özür Dilerim 💖</h1>
+    <p>Aptallığım yüzünden çok pişmanim  
+    Sen benim için çok kıymetlisin kalbini kırdığım için özür dilerim.  
+    Beni affeder misin? 🌼</p>
+</body>
+</html>
